@@ -1,0 +1,117 @@
+.about {
+    padding: 90px 0;
+    background-color: #fff;
+    .about-desc {
+        h2{
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #471b4e;
+            font-weight: 700;
+        }
+        p {
+            margin-bottom: 35px;
+            font-size: 30px;
+            line-height: 40px;
+            color: #471b4e;
+            font-weight: 300;
+        }
+        button{
+            width: 199px;
+            position: relative;
+            height: 55px;
+            text-transform: capitalize;
+            border-radius: 27px;
+            background-color: $second-color;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 500;
+            text-align: center;
+            transition: all linear .2s;
+            &:hover{
+                background-color: $main-color;
+            }
+        }
+     
+    }
+}
+
+.clients-exp{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    span{
+        font-size: 18px;
+        text-transform: capitalize;
+        color: #808080;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    h4{
+        font-size: 48px;
+        text-transform: capitalize;
+        color: $main-color;
+        font-weight: bold;
+        text-align: center;
+    }
+
+}
+
+
+
+@include max-768 {
+    .about .about-desc button:hover{
+        background-color: $second-color;
+    }
+    html[dir="ltr"] {
+        .about .about-desc button{
+            font-size: 14px;
+        }
+    }
+  
+    .about h2 {
+        font-size: 20px;
+    }
+    .about .about-desc p{
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+    .about .about-desc h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .about .about-desc button {
+       
+        height: 40px;
+        padding: 0 23px;
+        font-size: 15px;
+        width: auto;
+    }
+    .exp-col , .client-col{
+        margin-inline-start: 0;
+        width: 50%;
+    }
+    .clients-exp{
+        margin-top: 30px;
+    }
+    .clients-exp span{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .clients-exp h4{
+        font-size: 30px;
+    }
+}
+
+@include min-1200{
+    .client-col{
+        margin-inline-start: 47px;
+    }
+    .exp-col{
+        margin-inline-start: 50px;
+    }
+}
+
+

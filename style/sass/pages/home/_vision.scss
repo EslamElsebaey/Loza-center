@@ -1,0 +1,127 @@
+.vision{
+    padding: 90px 0;
+    overflow: hidden;
+    background-image:  url(../../../../images/shape.png) , linear-gradient(to right, $main-color 79%, #fff 0);
+    background-repeat: no-repeat;
+    background-position: -13% 209%;
+     .about-img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+html[dir="ltr"]{
+    .vision-desc-parent{
+        transform: translateX(30px);
+    }
+    .vision .container{
+        background-position: 600% 149%;
+    }
+    .vision {
+       background-image:  url(../../../../images/shape2.png) , linear-gradient(to left, $main-color 79%, #fff 0);
+       background-position: 113% 192%;
+    }
+}
+
+
+.vision-desc-parent{
+    transform: translateX(-30px);
+    .vision-desc-child1 , .vision-desc-child2{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+   .vision-desc-child1{
+    margin-bottom: 30px;
+   }
+    img{
+        margin-inline-end: 20px;
+        margin-top: -15px;
+    }
+    h2{
+        text-transform: capitalize;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 700;
+        margin-bottom: 15px;
+        
+    }
+    p{
+        font-size: 16px;
+        line-height: 32px;
+        color: #ffffff;
+        font-weight: 300;
+    }
+  
+}
+.vision-desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.vision-desc-parent-col{
+    display: flex;
+    align-items: center;
+}
+
+.about-img-sec{
+    width: 100%;
+}
+
+
+
+@include max-768 {
+
+    .vision{
+        background-image: none !important;
+        background-color: $main-color !important;
+        padding: 70px 0 50px 0;
+    }
+    .vision-desc-parent{
+        transform: translateX(0) !important;
+    }
+    .vision-desc-parent .vision-desc-child1{
+        margin-bottom: 15px;
+    }
+    .vision .video{
+        inset-inline-end: 0;
+    }
+    .vision .video-img{
+        width: 100%;
+        height: auto;
+    }
+    .youtube{
+        width: 35px;
+    }
+    .vision-desc-parent{
+        width: 100%;
+        margin-inline-start: 0;
+    }
+    .vision-desc-parent-col{
+        margin-top: 30px;
+    }
+    .vision-desc-parent p{
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .vision-desc-parent h2{
+        font-size: 17px;
+    }
+    .vision-desc-parent img {
+        width: 30px;
+        margin-top: 0;
+    }
+
+}
+
+
+@include min-768 {
+    .vision-desc-parent {
+        p{
+            max-width: 95%;
+        }
+    }
+}
+
+

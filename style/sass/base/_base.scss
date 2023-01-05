@@ -1,0 +1,259 @@
+body {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Montserrat-Arabic";
+}
+*{
+  margin: 0 ;
+  padding: 0;
+}
+
+html[dir = "rtl"] {
+  body{
+    text-align: right;
+  }
+}
+.swiper-pagination-bullet{
+  opacity: 0.502;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #000000 !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: #fff !important;
+  opacity: 1;
+}
+
+.preloader {
+  pointer-events: none;
+  user-select: none;
+}
+.progress {
+  position: fixed;
+  z-index: 99999;
+  top: 0; 
+  width: 100%;
+  height: 5px;
+  background-color: $main-color;
+  overflow: hidden;
+}
+
+.progress-bar {
+  animation: progress 6s ease infinite;
+  background-color: $second-color;
+}
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+
+.title {
+font-size: 30px;
+color: #471b4e;
+font-weight: 700;
+margin-bottom: 50px;
+text-align: center;
+}
+figure {
+  margin: 0;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast !important;
+}
+
+.ul-es {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ancor-es{
+  text-decoration: none;
+  color: #000;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.btn_es {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: block;
+  cursor: pointer;
+  outline: none !important;
+}
+
+@include max-1200{
+  .vision{
+    background-image:  linear-gradient(to right, $main-color 79%, #fff 0);
+  }
+  html[dir="ltr"]{
+    .vision{
+      background-image: linear-gradient(to left, $main-color 79%, #fff 0); 
+    }
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $second-color;
+}
+
+::-webkit-scrollbar-track{
+  background-color:  $main-color;
+}
+
+
+// back-up
+.toTop{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  bottom: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 24px 0px rgb(0 0 0 / 15%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  z-index: 9999;
+  transition: all linear .3s;
+  opacity: 0;
+  visibility: hidden;
+  &:hover{
+      background-color: $second-color;
+      .toTop-icon{
+        color: $white-color;
+      }
+  }
+  .toTop-icon{
+      font-size: 19px;
+      color: #6c757d;
+  }
+}
+
+.showToTop{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
+@include max-768 {
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .mainBanner{
+    .swiper-pagination-bullet{
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  .services , .gallery , .news {
+    padding: 50px 0;
+  }
+  .title{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .about{
+    padding: 50px 0 30px 0;
+  }
+
+  html[dir="ltr"]{
+    .vision-desc-parent h2{
+      font-size: 18px;
+    }
+    .vision-desc-parent p{
+      font-size: 15px;
+    }
+    .clients-exp span{
+      font-size: 15px;
+    }
+    .service-type span{
+      font-size: 15px;
+    }
+    .shopping-btn{
+      font-size: 14px;
+    }
+    .news-item .news-item-desc a:first-child{
+      font-size: 15px;
+    }
+    .about-desc h2{
+        font-size: 18px;
+    }
+    .about-desc p{
+      font-size: 15px;
+    }
+    .about-desc .btn_es{
+      text-transform: capitalize;
+    }
+    .vision h3{
+      font-size: 16px;
+    }
+    .banner-desc h1{
+      text-transform: capitalize;
+    }
+    .message input{
+      padding: 0 50px 0 25px;
+    }
+  }
+}
+
+@media screen and (min-width : 768px) and (max-width : 992px) {
+  .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: 30px;
+  }
+  .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 30px;
+  }
+
+.about-desc h2{
+  font-size: 25px;
+}
+.vision h3{
+  font-size: 21px;
+}
+.quick-drop{
+  max-height: none;
+}
+
+.contact ul li a{
+  font-size: 16px;
+}
+footer h4{
+  font-size: 16px;
+}
+.message input{
+  padding-left:  25px;
+  padding-right: 25px;
+}
+}
+
+
+@include min-1200{
+  .container, .container-lg, .container-md, .container-sm, .container-xl{
+    max-width: 1170px;
+  }
+}
+

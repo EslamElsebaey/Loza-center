@@ -1,0 +1,84 @@
+.services{
+    padding: 90px 0 70px  0;
+}
+.service-item{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    a{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    a:hover{
+    img{
+        transform: scale(1.1);
+    }
+    }
+    img{
+        transition: all linear .3s;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.service-type {
+        span{
+            text-align: center;
+            transition: all linear .3s;
+            color: #fff;
+            font-weight: 500;
+            text-transform: capitalize;
+            font-size: 16px;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+    
+.service-name{
+    position: absolute;
+    background: rgba($color: #471b4e, $alpha: 0.702) ;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0;
+    transition: all linear .3s;
+}
+.services-col{
+    margin-bottom: 30px;
+}
+
+.services-col:hover{
+    img {
+        transform: scale(1.1);
+    }
+    .service-name{
+        background: rgba($color: #471b4e, $alpha: 1);
+    }
+}
+
+
+@include max-768 {
+    .service-type span{
+        font-size: 15px ;
+        margin-top: 8px;
+        margin-bottom: 30px;
+    }
+    .services-col:last-child .service-type span{
+        margin-bottom: 0;
+    }
+    .service-item a:hover img{
+        transform: scale(1);
+    }
+    .services-col{
+        margin-bottom: 20px;
+    }
+    .services-col:hover{
+        img {
+            transform: scale(1);
+        }
+        .service-name{
+            background: rgba($color: #471b4e, $alpha: 0.702);
+        }
+    }
+    
+}

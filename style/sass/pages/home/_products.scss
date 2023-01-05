@@ -1,0 +1,95 @@
+
+.products{
+    padding: 90px 0;
+}
+.product-item {
+    // padding: 20px 25px;
+    border: 2px solid #f0f0f0;
+    img{
+        width: 100%;
+    }
+}
+.products-parent{
+    position: relative;
+}
+.product-name{
+    padding: 15px 30px 30px 30px;
+    a{
+        font-size: 14px;
+        line-height: 20px;
+        color: #471b4e;
+        font-weight: 300;
+        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+}
+
+.shopping-btn{
+    width: 175px;
+    height: 40px;
+    padding: 0 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid $main-color;
+    margin: 30px auto 0 auto;
+    display: block;
+    transition: all linear .3s;
+    &:hover{
+        background-color: $main-color;
+        color: #fff;
+    }
+}
+.products{
+    .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        display: none;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        left: -60px;
+        &:hover{
+            background-color: $main-color;
+        }
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        right: -60px;
+        &:hover{
+            background-color: $main-color;
+        }
+    }
+}
+
+
+@include max-992 {
+    .products{
+        .swiper-button-prev, .swiper-rtl .swiper-button-next, .swiper-button-next, .swiper-rtl .swiper-button-prev i{
+            display: none;
+        }
+    }
+   
+    .products .swiper-horizontal > .swiper-pagination-bullets, .products .swiper-pagination-bullets.swiper-pagination-horizontal, .products .swiper-pagination-custom, .products .swiper-pagination-fraction{
+        display: flex;
+        bottom: -30px;
+    }
+    .shopping-btn{
+         margin : 60px auto 0 auto ;
+    }
+    .products{
+        
+        .swiper-pagination-bullet{
+            opacity: .3;
+        }
+        .swiper-pagination-bullet-active{
+            background-color: #471b4e !important;
+            opacity: 1;
+        }
+    }
+}
+
+
+@include max-768 {
+    .products{
+        padding: 50px 0;
+    }
+}

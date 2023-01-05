@@ -1,0 +1,32 @@
+
+// Abstracts
+@import "sass/abstracts/variables";
+@import "sass/abstracts/mixins";
+
+/**********************************************************************************************/
+
+// pages
+
+//  home 
+@import "sass/pages/home/main";
+@import "sass/pages/home/about";
+@import "sass/pages/home/vision";
+@import "sass/pages/home/services";
+@import "sass/pages/home/products";
+@import "sass/pages/home/employees";
+
+
+
+
+/**********************************************************************************************/
+
+//Layout
+@import "sass/layout/header";
+@import "sass/layout/footer";
+
+/**********************************************************************************************/
+
+// Base and fonts
+@import "sass/base/fonts";
+@import "sass/base/base";
+

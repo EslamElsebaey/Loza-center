@@ -296,7 +296,7 @@
 .vision {
   padding: 90px 0;
   overflow: hidden;
-  background-image: url(../../../../images/shape.png), linear-gradient(to right, #471b4e 79%, #fff 0);
+  background-image: url(../images/shape.png), linear-gradient(to right, #471b4e 79%, #fff 0);
   background-repeat: no-repeat;
   background-position: -13% 209%;
 }
@@ -313,7 +313,7 @@ html[dir=ltr] .vision .container {
   background-position: 600% 149%;
 }
 html[dir=ltr] .vision {
-  background-image: url(../../../../images/shape2.png), linear-gradient(to left, #471b4e 79%, #fff 0);
+  background-image: url(../images/shape2.png), linear-gradient(to left, #471b4e 79%, #fff 0);
   background-position: 113% 192%;
 }
 
@@ -577,13 +577,13 @@ html[dir=ltr] .vision {
 .employees {
   padding: 90px 0;
   background-color: #471b4e;
-  background-image: url(../../../../images/shape2.png);
+  background-image: url(../images/shape2.png);
   background-repeat: no-repeat;
   background-position: 113% -45%;
 }
 
 html[dir=ltr] .employees {
-  background-image: url(../../../../images/shape.png);
+  background-image: url(../images/shape.png);
   background-repeat: no-repeat;
   background-position: -13% -60%;
 }

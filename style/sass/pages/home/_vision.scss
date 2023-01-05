@@ -1,7 +1,7 @@
 .vision{
     padding: 90px 0;
     overflow: hidden;
-    background-image:  url(../../../../images/shape.png) , linear-gradient(to right, $main-color 79%, #fff 0);
+    background-image:  url(../images/shape.png) , linear-gradient(to right, $main-color 79%, #fff 0);
     background-repeat: no-repeat;
     background-position: -13% 209%;
      .about-img{
@@ -18,7 +18,7 @@ html[dir="ltr"]{
         background-position: 600% 149%;
     }
     .vision {
-       background-image:  url(../../../../images/shape2.png) , linear-gradient(to left, $main-color 79%, #fff 0);
+       background-image:  url(../images/shape2.png) , linear-gradient(to left, $main-color 79%, #fff 0);
        background-position: 113% 192%;
     }
 }

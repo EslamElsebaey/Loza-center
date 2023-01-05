@@ -125,7 +125,7 @@ const mainSwiper = new Swiper('.mainBanner .mainSwiper', {
 const productSwiper = new Swiper('.products .mainSwiper', {
   loop: true,
   draggable: true,
-  // autoplay: true,
+  autoplay: true,
   navigation: {
     nextEl: ' .products .swiper-button-next',
     prevEl: '.products .swiper-button-prev',

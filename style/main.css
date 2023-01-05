@@ -1020,7 +1020,7 @@ html[dir=ltr] .li-drop .ul-drop {
     inset-inline-start: 0%;
     width: 100%;
     height: 100%;
-    padding: 25px 22px 0 26px;
+    padding: 22px 22px 0 22px;
     background-color: #fff;
   }
   .nav-ul {
@@ -1402,7 +1402,7 @@ footer h4 {
   }
   .arrow-rotate::after {
     transform: translateY(-50%) rotate(180deg) !important;
-    top: 10px;
+    top: 9px;
   }
   .quick-links ul li {
     font-size: 14px;

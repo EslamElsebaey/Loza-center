@@ -52,6 +52,52 @@ html[dir = "rtl"] {
   }
 }
 
+// bread crump 
+
+.breadcrumb-sec{
+  background-color: #000;
+  padding: 42.5px 0;
+  text-align: center;
+  background-color: $main-color;
+}
+.page-head{
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  filter: drop-shadow(0 0 10px rgba(5,6,6,0.2));
+  margin-bottom: 10px;
+}
+.item-home::after{
+  content: " / ";
+  padding: 0 5px;
+  color: $second-color;
+}
+.breadcrumb{
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0;
+ 
+}
+.bread-link , .breadcrumb .active{
+  font-size: 14px;
+font-weight: 300;
+ color: $second-color;
+  text-align: center;
+  filter: drop-shadow(0 0 10px rgba(5,6,6,0.2));
+}
+.bread-link{
+  &:hover{
+      text-decoration: none;
+      color: $second-color;
+  }
+}
+
+//end of  bread crump 
+
 
 
 .title {
@@ -91,6 +137,9 @@ img {
   cursor: pointer;
   outline: none !important;
 }
+
+
+
 
 @include max-1200{
   .vision{
@@ -158,6 +207,12 @@ img {
 
 
 @include max-768 {
+  .breadcrumb-sec{
+    padding: 20px 0;
+}
+.page-head , .request-title{
+    font-size: 18px;
+}
   .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
     padding-right: 20px;
     padding-left: 20px;

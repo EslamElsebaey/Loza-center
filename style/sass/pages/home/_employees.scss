@@ -94,6 +94,10 @@ html[dir="ltr"]{
 .empName{
     color: #fff;
     font-size: 16px;
+    transition: all linear .2s;
+    &:hover{
+        color: $second-color;
+    }
 }
 .empImages-col{
     padding-left: 0;
@@ -166,6 +170,9 @@ html[dir="ltr"]{
     }
     .best-emp h2{
         font-size: 18px;
+    }
+    .empName{
+        font-size: 15px;
     }
 }
 

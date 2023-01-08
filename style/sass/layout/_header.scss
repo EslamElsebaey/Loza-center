@@ -1,3 +1,4 @@
+
 //  header
 html[dir="ltr"]{
     .lang  {
@@ -62,14 +63,15 @@ nav{
 
 
   .fixed{
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
     z-index: 50;
     transition: 0.5s;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: 0px 0px 17px 0px rgb(0 0 0 / 11%);
     background-color: #fff;
+    padding: 10px 0;
   }
   
   .fixsedt {
@@ -97,7 +99,7 @@ nav{
             position: relative;
             &:hover{
                 text-decoration: none;
-                color: $second-color;
+                color: $second-color !important;
             }
         }
     }
@@ -143,6 +145,7 @@ nav{
         min-width: 145px ;
         border-radius: 7px;
         background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding: 6px 10px;
         li {
             border-bottom: 1px solid #fff;
@@ -190,6 +193,34 @@ html[dir="ltr"]{
     inset-inline-start: -100% !important;
 }
 
+
+
+
+// Other PAGES HEADER
+
+
+.pages-header{
+    .openNav-btn i{
+        color: $main-color !important;
+    }
+    .li-drop > a::after{
+        color: $main-color;
+    }
+    padding: 20px 0;
+    position: static;
+    background-color: #fff;
+    .nav-ul > li > a{
+        color: $main-color;
+        &:hover{
+            color: $second-color;
+        }
+    }
+    .lang a span{
+         color: #808080;
+    }
+}
+
+
 @include max-992 {
    
     .li-drop{
@@ -206,6 +237,9 @@ html[dir="ltr"]{
 }
 
 @include max-768 {
+    .pages-header{
+        padding: 10px 0;
+    }
     .logo {
         img{
             width: 50px;
@@ -221,7 +255,7 @@ html[dir="ltr"]{
         color: #adb5bd;
     }
     header{
-        padding: 7px 0;
+        padding: 8px 0;
     }
     .icon-rotate::after{
         transform: translateY(-50%) rotate(180deg)  !important;
@@ -232,7 +266,7 @@ html[dir="ltr"]{
             text-align: right;
         }
     }
-    .search-section{
+    .openNav-section{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -263,6 +297,7 @@ html[dir="ltr"]{
         opacity: 1;
         visibility: visible;
         padding-top: 10px;
+        box-shadow: none;
         display: none;
             
             li a {
@@ -287,6 +322,7 @@ html[dir="ltr"]{
     nav{
         position: fixed ;
         overflow: auto;
+        z-index: 1000;
         top: 0 ;
         inset-inline-start: 0%;
         width: 100%;
@@ -343,7 +379,7 @@ html[dir="ltr"]{
 
 
 @include min-768{
-    .search-section{
+    .openNav-section{
         display: none;
     }
     .close-lang-holder{
@@ -363,6 +399,7 @@ html[dir="ltr"]{
    
     .li-drop .ul-drop a{
         text-align: center;
+        text-transform: none;
     }
 }
 
@@ -371,7 +408,7 @@ html[dir="ltr"]{
 
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-        .search-section {
+        .openNav-section {
             width: 100%;
             order: 5;
             margin-top: 15px;

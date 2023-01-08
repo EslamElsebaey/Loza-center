@@ -16,63 +16,35 @@ $(document).ready(function(){
 //fixed nav
 
   //~~~~~~~~~ fixed header
- if ($(window).width() < 768) {
     //~~~~~~~~~ fixed header
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 150) {
         $("header").addClass("fixed");
         $(".openNav-btn i").css("color" , "#471b4e");
-        $(".logo img").css("filter" , " brightness(0) saturate(100%) invert(15%) sepia(50%) saturate(1132%) hue-rotate(252deg) brightness(91%) contrast(101%)")
+        $(".logo img").css("filter" , " brightness(0) saturate(100%) invert(15%) sepia(50%) saturate(1132%) hue-rotate(252deg) brightness(91%) contrast(101%)") ;
+        $(".nav-ul > li > a").css("color" , "#471b4e");
+        $(".lang a span").css("color" , "#471b4e");
       } else {
         $("header").removeClass("fixed");
         $(".openNav-btn i").css("color" , "#fff");
         $(".logo img").css("filter" , "none") ;
+        $(".nav-ul > li > a").css("color" , "#fff");
+        $(".lang a span").css("color" , "#fff");
       }
     });
     var fixedBar = document.querySelector("header"),
-      prevScrollpos = $(window).scrollTop();
+      prevScrollposition = $(window).scrollTop();
 
     (window.onscroll = function () {
       var o = $(window).scrollTop();
-      prevScrollpos < o && prevScrollpos > 0
-        ? fixedBar.classList.add("fixsedt")
-        : fixedBar.classList.remove("fixsedt"),
-        (prevScrollpos = o);
+      prevScrollposition < o && prevScrollposition > 0 ? fixedBar.classList.add("fixsedt") : fixedBar.classList.remove("fixsedt"), (prevScrollposition = o);
     })   
-  }
+  
 
 
-/*******************************************************************************************/
 
 
-// counters
 
-let experience = parseInt(document.querySelector(".exp").innerHTML);
-let clients = parseInt(document.querySelector(".clients").innerHTML);
-
-
-let counter = setInterval(() => {
-  experience = experience+1  ; 
-  document.querySelector(".exp").innerHTML =  "+" + experience
-   if(experience == 30) {
-     clearInterval(counter)
-   }
- },500);
- 
-
-let counter2 = setInterval(() => {
-  clients = clients+1  ; 
-  document.querySelector(".clients").innerHTML =  "+" + clients
-   if(clients == 5000) {
-     clearInterval(counter2)
-   }
- }, .2);
- 
-
-/*******************************************************************************************/
-
-//  wow animation
-new WOW().init();
 
 /*******************************************************************************************/
 
@@ -216,7 +188,7 @@ if($(window).width() <= 768) {
     $(this).toggleClass("arrow-rotate");
   })
   
-$(".li-drop").click(function (e) {
+$(".li-drop > a").click(function (e) {
   e.preventDefault() ;
   $(".ul-drop").slideToggle(300) ;
   $(this).children().toggleClass("icon-rotate");
@@ -233,6 +205,8 @@ $(".li-drop").click(function (e) {
 
 
 
+//  wow animation
+new WOW().init();
 
 
 

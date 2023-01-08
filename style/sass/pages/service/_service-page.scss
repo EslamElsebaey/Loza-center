@@ -1,0 +1,235 @@
+
+.desc-text{
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: $main-color;
+    font-weight: 300;
+    // width: 568px;
+   text-align: justify;
+}
+.review-btn{
+    border-radius: 25px;
+    background-color: #471b4e;
+    color: #fff;
+    padding: 10px 21px;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    &:hover{
+        i {
+            transform: scale(1.2);
+        }
+    }
+    
+    i {
+        font-size: 24px;
+        color: #ffc600;
+        margin-inline-end: 10px;
+        transition: all linear .2s;
+    }
+}
+.description-img{
+    text-align: left;
+    img{
+        max-width: 100%;
+    }
+}
+.service-desc{
+    padding-top: 50px;
+}
+
+.service-desc-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.description-sec-col{
+    display: flex;
+    align-items: center;
+    width: 568px;
+}
+
+/***********************************************************************************************/
+
+// service types section
+
+.services-types , .best-employees{
+    .title{
+        font-size: 18px;
+        color: $main-color;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+.services-types{
+    padding: 90px 0 70px 0;
+    .service-types-item {
+        
+        width: 360px;
+        height: 265px;
+        max-width: 100%;
+        background-color: #ece8ed;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        &:hover{
+            .service-types-name {
+                background-color: #471b4e;
+            }
+        }
+        .img-holder{
+            display: flex;
+            width: 100%;
+            min-height: 265px;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: auto;
+            opacity: .2;
+        }
+    }
+    
+}
+.service-types-name{
+    transition: all linear .3s;
+    position: absolute;
+    background: rgba(71, 27, 78, 0.702);
+    width: 100%;
+    bottom: 0;
+    padding: 13px 0;
+    span{
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+        text-transform: capitalize;
+    }
+}
+.services-types-col{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/***********************************************************************************************/
+
+// best employees section
+.best-employees{
+    padding-bottom: 100px;
+}
+.employees-images-parent{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    gap: 38px 30px;
+}
+.best-emp-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .best-emp-circle figure img{
+        transition: all linear .3s;
+    }
+    &:hover{
+        .best-emp-circle figure img{
+            transform: scale(1.1);
+        }
+    }
+}
+.best-emp-circle{
+    &:hover{
+        text-decoration: none;
+    }
+    width: 100%;
+    text-align: center;
+    figure {
+        width: 100%;
+        border-radius: 50%;
+        position: relative;
+        padding-bottom: 100%;
+        margin-bottom: 20px;
+        overflow: hidden;
+        img{
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+   
+}
+.bestEmp-name{
+    font-size: 16px;
+color: #471b4e;
+}
+
+
+
+
+@include max-1200 {
+    .employees-images-parent{
+        grid-template-columns: repeat(5 , 1fr);
+    }
+}
+
+
+@include max-992 {
+    .employees-images-parent{
+        grid-template-columns: repeat(4 , 1fr);
+    }
+}
+
+@include max-768 {
+    .employees-images-parent{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    .description-sec-col{
+        margin-bottom: 30px;
+    }
+    .desc-text , .review-btn , .service-types-name span , .bestEmp-name{
+        font-size: 15px;
+    }
+    .review-btn i{
+        font-size: 20px;
+    }
+    .service-desc{
+        padding-top: 35px;
+    }
+    .services-types-col{
+        margin-bottom: 20px;
+    }
+    .services-types{
+        padding: 70px 0 50px 0;
+    }
+    .best-employees{
+        padding-bottom: 70px;
+    }
+    .review-btn:hover i{
+        transform: scale(1);
+    }
+    .best-emp-item:hover .best-emp-circle figure img{
+        transform: scale(1);
+    }
+    .review-btn{
+       padding: 9px 15px; 
+       margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .employees-images-parent{
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 30px 25px;
+    }
+}

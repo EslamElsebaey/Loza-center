@@ -1,0 +1,38 @@
+.artist-sec{
+    padding: 50px 0 150px 0;
+}
+.artist-details-sec{
+    text-align: center;
+}
+.artist-details-sec{
+    img{
+        width: 159px;
+        height: 159px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        object-fit: cover;
+    }
+}
+.artist-para{
+    width: 71%;
+    font-size: 16px;
+    line-height: 30px;
+    color: $main-color;
+    font-weight: 300;
+    text-align: center;
+    margin:  0 auto;
+}
+.artist-name{
+    font-size: 18px;
+color: $main-color;
+font-weight: 700;
+text-align: center;
+margin: 0;
+margin-bottom: 15px;
+}
+.border-line{
+    width: 400px;
+    height: 1px;
+    background-color: rgba($color: #000000, $alpha: 0.102);
+    margin: 50px auto;
+}

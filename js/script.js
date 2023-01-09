@@ -28,8 +28,21 @@ $(document).ready(function(){
         $("header").removeClass("fixed");
         $(".openNav-btn i").css("color" , "#fff");
         $(".logo img").css("filter" , "none") ;
-        $(".nav-ul > li > a").css("color" , "#fff");
-        $(".lang a span").css("color" , "#fff");
+        if($("header").hasClass("pages-header")){
+          $(".nav-ul > li > a").css("color" , "#471b4e");
+          $(".lang a span").css("color" , "#471b4e");
+        }else{
+           if($(window).width() <= 768){
+            $(".nav-ul > li > a").css("color" , "#471b4e");
+            $(".lang a span").css("color" , "#471b4e");
+           }else{
+          $(".nav-ul > li > a").css("color" , "#fff");
+          $(".lang a span").css("color" , "#fff");
+            }
+         
+        }
+       
+       
       }
     });
     var fixedBar = document.querySelector("header"),
@@ -111,7 +124,7 @@ const productSwiper = new Swiper('.products .mainSwiper', {
   // Responsive breakpoints
   breakpoints: {
   
-    350: {
+    330: {
       slidesPerView: 2,
       spaceBetween: 15
     },
@@ -191,7 +204,7 @@ if($(window).width() <= 768) {
 $(".li-drop > a").click(function (e) {
   e.preventDefault() ;
   $(".ul-drop").slideToggle(300) ;
-  $(this).children().toggleClass("icon-rotate");
+  $(this).toggleClass("icon-rotate");
   })
 }
 

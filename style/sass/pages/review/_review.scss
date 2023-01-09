@@ -1,0 +1,193 @@
+.review-section{
+    padding: 65px 0 120px 0;
+    .review-title{
+        font-size: 22px;
+        color: $main-color;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+.myform{
+    margin-top: 35px;
+    .myLabel {
+        display: block;
+        font-size: 14px;
+        color: $main-color;
+        font-weight: 500;
+        margin-inline-start: 20px;
+    }.required .myLabel{
+        &::after{
+            content: "*";
+            color: red;
+        }
+    }
+    .myInput {
+        width: 100%;
+        height: 45px;
+        border-radius: 25px;
+        background-color: #f2f2f2;
+        padding: 0 20px;
+        border: none;
+        &:focus{
+            outline: none;
+            border: 1px solid $main-color;
+        }
+    }
+    .mytextarea{
+        border-radius: 25px;
+        background-color: #f2f2f2;
+        width: 100%;
+        border: none;
+        height: 100px !important;
+        resize: none;
+        padding: 10px 20px;
+        &:focus{
+            outline: none;
+            border: 1px solid $main-color;
+        }
+    }
+}
+.general-input{
+    margin-bottom: 15px;
+}
+
+.checkmark{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 2px solid #e6e6e6;
+    position: relative;
+    margin-inline-end: 8px;
+    display: inline-block;
+    &::after{
+        content: "";
+        position: absolute;
+        display: none;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 6px;
+        height: 10px;
+        border: 1px solid #fff;
+        border-width: 0 3px 3px 0;
+    
+    }
+    
+}
+.check-div{
+    input:checked ~ .checkmark:after {
+        display: block;
+      }
+}
+
+.submitBtn{
+    height: 50px;
+    border-radius: 25px;
+    background-color: $main-color;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    width: 180px;
+    text-align: center;
+    transition: all linear .2s;
+    border: none;
+}
+
+.submit-general-input{
+    text-align: center;
+}
+
+// checkbox
+.mycheckbox{
+    display: flex;
+    margin-inline-start: 20px;
+}
+
+
+
+.checkbox-general-input{
+    margin-top: 22px;
+    .myLabel{
+        margin-bottom: 22px;
+    }
+}
+
+
+.check-div{
+    width: 213px;
+    label{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #471b4e;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    input{
+        opacity: 0;
+        appearance: none;
+        &:checked + .checkmark{
+            background-color: $main-color;
+            border: 2px solid $main-color;
+        }
+    }
+}
+// .mycheck-div{
+//     width: auto;
+// }
+
+.mycheckbox-service-quality{
+    flex-wrap: wrap;
+}
+
+
+@include min-768 {
+    .submitBtn{
+        &:hover{
+            background-color: $second-color;
+            color: #fff;
+        }
+    }
+}
+
+@include min-768{
+    .myform{
+        .mycontainer{
+            max-width: 456px;
+            margin: auto;
+        }
+    }
+  
+}
+
+@include max-768 {
+    .checkbox-general-input .myLabel{
+        margin-bottom: 15px;
+    }
+    .review-section .review-title{
+        font-size: 17px;
+        line-height: 1.7;
+    }
+    .review-section{
+        padding: 40px 0 80px 0;
+    }
+    .general-input{
+        margin: 20px 0;
+    }
+    .mycheckbox{
+        flex-wrap: wrap;
+    }
+   
+    // .mycheckbox{
+    //    flex-wrap: wrap;
+    // }
+}
+
+@media screen and (max-width : 500px) {
+    .check-div{
+        width: 142px ;
+        max-width: 100%;
+    }
+}

@@ -10,18 +10,18 @@
 }
 .review-btn{
     border-radius: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     background-color: #471b4e;
     color: #fff;
-    padding: 10px 21px;
     font-size: 17px;
+    padding: 11px 21.2px;
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    outline: none;
     margin-top: 30px;
     &:hover{
+        text-decoration: none;
+        color: #fff;
         i {
             transform: scale(1.2);
         }
@@ -60,14 +60,9 @@
 
 // service types section
 
-.services-types , .best-employees{
-    .title{
-        font-size: 18px;
-        color: $main-color;
-        font-weight: 700;
-        text-align: center;
-    }
-}
+
+
+
 
 .services-types{
     padding: 90px 0 70px 0;
@@ -125,11 +120,14 @@
 // best employees section
 .best-employees{
     padding-bottom: 100px;
+    .pages-title{
+        margin-bottom: 40px;
+    }
 }
 .employees-images-parent{
     display: grid;
     grid-template-columns: repeat(6 , 1fr);
-    gap: 38px 30px;
+    gap: 40px 35px;
 }
 .best-emp-item{
     display: flex;
@@ -142,6 +140,9 @@
     &:hover{
         .best-emp-circle figure img{
             transform: scale(1.1);
+        }
+        .bestEmp-name{
+            color: $second-color;
         }
     }
 }
@@ -171,7 +172,8 @@
 }
 .bestEmp-name{
     font-size: 16px;
-color: #471b4e;
+    color: #471b4e;
+    transition:  all linear .2s;
 }
 
 
@@ -187,18 +189,20 @@ color: #471b4e;
 @include max-992 {
     .employees-images-parent{
         grid-template-columns: repeat(4 , 1fr);
+        gap: 30px;
     }
 }
 
 @include max-768 {
     .employees-images-parent{
         grid-template-columns: repeat(3 , 1fr);
+        gap: 25px;
     }
     .description-sec-col{
-        margin-bottom: 30px;
+        margin-bottom: 35px;
     }
     .desc-text , .review-btn , .service-types-name span , .bestEmp-name{
-        font-size: 15px;
+        font-size: 14px;
     }
     .review-btn i{
         font-size: 20px;
@@ -210,7 +214,7 @@ color: #471b4e;
         margin-bottom: 20px;
     }
     .services-types{
-        padding: 70px 0 50px 0;
+        padding: 50px 0;
     }
     .best-employees{
         padding-bottom: 70px;
@@ -222,14 +226,25 @@ color: #471b4e;
         transform: scale(1);
     }
     .review-btn{
-       padding: 9px 15px; 
-       margin-top: 25px;
+       margin-top: 20px;
+       font-size: 14px;
+       padding: 10px 18px;
     }
+    .description-sec{
+        text-align: center;
+    }
+    .best-employees .pages-title{
+        margin-bottom: 30px;
+    }
+    .best-emp-circle figure{
+        margin-bottom: 10px;
+    }
+   
 }
 
 @media screen and (max-width: 500px) {
     .employees-images-parent{
         grid-template-columns: repeat(2 , 1fr);
-        gap: 30px 25px;
+        gap: 20px;
     }
 }

@@ -1,5 +1,5 @@
 .artist-sec{
-    padding: 50px 0 150px 0;
+    padding-top: 50px ;
 }
 .artist-details-sec{
     text-align: center;
@@ -14,7 +14,8 @@
     }
 }
 .artist-para{
-    width: 71%;
+    width: 835px;
+    max-width: 100%;
     font-size: 16px;
     line-height: 30px;
     color: $main-color;
@@ -35,4 +36,106 @@ margin-bottom: 15px;
     height: 1px;
     background-color: rgba($color: #000000, $alpha: 0.102);
     margin: 50px auto;
+    max-width: 100%;
+}
+
+
+
+.work-examples{
+    padding-bottom: 170px;
+}
+
+.work-examples-imgs{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 30px;
+}
+.work-img-holder{
+    display: block;
+    position: relative;
+    width: 100%;
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: $main-color, $alpha: .8);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: all linear .2s;
+    }
+    .search-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        font-size: 34px;
+        color: #ffffff;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transition: all linear .2s;
+    }
+}
+
+.work-item{
+    &:hover{
+        .work-img-holder::before{
+            opacity: 1;
+            visibility: visible;
+        }
+        .search-icon{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+
+
+@include max-992 {
+    .work-examples-imgs{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+
+@include max-768 {
+    .artist-sec{
+        padding-top: 30px;
+    }
+    .work-examples-imgs{
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 20px;
+    }
+    .artist-details-sec img{
+        width: 140px ;
+        height: 140px;
+    }
+    .artist-para{
+        text-align: justify;
+        text-align-last: center;
+        width: 100%;
+        font-size: 14px;
+        line-height: 29px;
+    }
+    .border-line{
+        margin: 35px auto;
+    }
+    .work-examples{
+        padding-bottom: 60px;
+    }
+    .border-line{
+        width: 60%;
+    }
+    .artist-name{
+        font-size: 16px;
+    }
+    .work-img-holder .search-icon{
+        font-size: 25px;
+    }
 }

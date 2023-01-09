@@ -2,6 +2,10 @@ body {
   font-weight: 400;
   font-style: normal;
   font-family: "Montserrat-Arabic";
+  
+}
+::selection{
+  background-color: $second-color ;
 }
 *{
   margin: 0 ;
@@ -202,6 +206,14 @@ img {
   visibility: visible;
 }
 
+.pages-title{
+  font-size: 18px;
+  color: $main-color;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 
 
 
@@ -211,7 +223,10 @@ img {
     padding: 20px 0;
 }
 .page-head , .request-title{
-    font-size: 18px;
+    font-size: 17px;
+}
+.bread-link, .breadcrumb .active{
+  font-size: 13px;
 }
   .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
     padding-right: 20px;
@@ -272,6 +287,9 @@ img {
     .message input{
       padding: 0 50px 0 25px;
     }
+  }
+  .pages-title{
+    font-size: 16px;
   }
 }
 

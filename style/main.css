@@ -203,21 +203,20 @@
   color: #471b4e;
   font-weight: 300;
 }
-.about .about-desc button {
-  width: 199px;
-  position: relative;
-  height: 55px;
+.about .about-desc a {
+  display: inline-block;
+  padding: 12px 36px;
   text-transform: capitalize;
-  border-radius: 27px;
+  border-radius: 25px;
   background-color: #aa78bd;
   color: #fff;
   font-size: 17px;
   font-weight: 500;
-  text-align: center;
   transition: all linear 0.2s;
 }
-.about .about-desc button:hover {
+.about .about-desc a:hover {
   background-color: #471b4e;
+  text-decoration: none;
 }
 
 .clients-exp {
@@ -243,7 +242,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .about .about-desc button:hover {
+  .about .about-desc a:hover {
     background-color: #aa78bd;
   }
   html[dir=ltr] .about .about-desc button {
@@ -261,11 +260,9 @@
     font-size: 20px;
     margin-bottom: 10px;
   }
-  .about .about-desc button {
-    height: 40px;
-    padding: 0 23px;
+  .about .about-desc a {
+    padding: 9px 23px;
     font-size: 15px;
-    width: auto;
   }
   .exp-col, .client-col {
     -webkit-margin-start: 0;
@@ -490,6 +487,7 @@ html[dir=ltr] .vision {
 }
 .products {
   padding: 90px 0;
+  text-align: center;
 }
 
 .product-item {
@@ -527,19 +525,18 @@ html[dir=ltr] .vision {
 }
 
 .shopping-btn {
-  width: 175px;
-  height: 40px;
-  padding: 0 25px;
+  display: inline-block;
   border-radius: 20px;
+  padding: 6px 25.4px;
   background-color: transparent;
   border: 2px solid #471b4e;
-  margin: 30px auto 0 auto;
-  display: block;
+  margin-top: 30px;
+  text-align: center;
   transition: all linear 0.3s;
 }
 .shopping-btn:hover {
   background-color: #471b4e;
-  color: #fff;
+  color: #fff !important;
 }
 
 .products .swiper-horizontal > .swiper-pagination-bullets, .products .swiper-pagination-bullets.swiper-pagination-horizontal, .products .swiper-pagination-custom, .products .swiper-pagination-fraction {
@@ -658,12 +655,12 @@ html[dir=ltr] .employees {
 }
 
 .showMore-btn {
-  width: 151px;
-  height: 40px;
+  padding: 7.5px 32px;
+  display: inline-block;
   border-radius: 20px;
   background-color: transparent;
   border: 2px solid #ffffff;
-  color: #fff;
+  color: #fff !important;
   font-size: 14px;
   font-weight: 700;
   margin-top: 35px;
@@ -671,7 +668,7 @@ html[dir=ltr] .employees {
 }
 .showMore-btn:hover {
   background-color: #fff;
-  color: #471b4e;
+  color: #471b4e !important;
 }
 
 .empName {
@@ -724,7 +721,7 @@ html[dir=ltr] .employees {
     text-align: center;
   }
   .employees-parent .showMore-btn {
-    margin-top: 60px;
+    margin: 60px auto 0 auto;
   }
   .employees .swiper-horizontal > .swiper-pagination-bullets, .employees .swiper-pagination-bullets.swiper-pagination-horizontal, .employees .swiper-pagination-custom, .employees .swiper-pagination-fraction {
     bottom: 70px;
@@ -766,17 +763,19 @@ html[dir=ltr] .employees {
 
 .review-btn {
   border-radius: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background-color: #471b4e;
   color: #fff;
-  padding: 10px 21px;
   font-size: 17px;
+  padding: 11px 21.2px;
   font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  outline: none;
   margin-top: 30px;
+}
+.review-btn:hover {
+  text-decoration: none;
+  color: #fff;
 }
 .review-btn:hover i {
   transform: scale(1.2);
@@ -812,13 +811,6 @@ html[dir=ltr] .employees {
 }
 
 /***********************************************************************************************/
-.services-types .title, .best-employees .title {
-  font-size: 18px;
-  color: #471b4e;
-  font-weight: 700;
-  text-align: center;
-}
-
 .services-types {
   padding: 90px 0 70px 0;
 }
@@ -872,11 +864,14 @@ html[dir=ltr] .employees {
 .best-employees {
   padding-bottom: 100px;
 }
+.best-employees .pages-title {
+  margin-bottom: 40px;
+}
 
 .employees-images-parent {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 38px 30px;
+  gap: 40px 35px;
 }
 
 .best-emp-item {
@@ -890,6 +885,9 @@ html[dir=ltr] .employees {
 }
 .best-emp-item:hover .best-emp-circle figure img {
   transform: scale(1.1);
+}
+.best-emp-item:hover .bestEmp-name {
+  color: #aa78bd;
 }
 
 .best-emp-circle {
@@ -919,6 +917,7 @@ html[dir=ltr] .employees {
 .bestEmp-name {
   font-size: 16px;
   color: #471b4e;
+  transition: all linear 0.2s;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -929,17 +928,19 @@ html[dir=ltr] .employees {
 @media only screen and (max-width: 991px) {
   .employees-images-parent {
     grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
   }
 }
 @media only screen and (max-width: 767px) {
   .employees-images-parent {
     grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
   }
   .description-sec-col {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
   .desc-text, .review-btn, .service-types-name span, .bestEmp-name {
-    font-size: 15px;
+    font-size: 14px;
   }
   .review-btn i {
     font-size: 20px;
@@ -951,7 +952,7 @@ html[dir=ltr] .employees {
     margin-bottom: 20px;
   }
   .services-types {
-    padding: 70px 0 50px 0;
+    padding: 50px 0;
   }
   .best-employees {
     padding-bottom: 70px;
@@ -963,18 +964,28 @@ html[dir=ltr] .employees {
     transform: scale(1);
   }
   .review-btn {
-    padding: 9px 15px;
-    margin-top: 25px;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+  .description-sec {
+    text-align: center;
+  }
+  .best-employees .pages-title {
+    margin-bottom: 30px;
+  }
+  .best-emp-circle figure {
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 500px) {
   .employees-images-parent {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px 25px;
+    gap: 20px;
   }
 }
 .artist-sec {
-  padding: 50px 0 150px 0;
+  padding-top: 50px;
 }
 
 .artist-details-sec {
@@ -991,7 +1002,8 @@ html[dir=ltr] .employees {
 }
 
 .artist-para {
-  width: 71%;
+  width: 835px;
+  max-width: 100%;
   font-size: 16px;
   line-height: 30px;
   color: #471b4e;
@@ -1014,8 +1026,278 @@ html[dir=ltr] .employees {
   height: 1px;
   background-color: rgba(0, 0, 0, 0.102);
   margin: 50px auto;
+  max-width: 100%;
 }
 
+.work-examples {
+  padding-bottom: 170px;
+}
+
+.work-examples-imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.work-img-holder {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.work-img-holder img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.work-img-holder::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(71, 27, 78, 0.8);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.2s;
+}
+.work-img-holder .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 34px;
+  color: #ffffff;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.2s;
+}
+
+.work-item:hover .work-img-holder::before {
+  opacity: 1;
+  visibility: visible;
+}
+.work-item:hover .search-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 991px) {
+  .work-examples-imgs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .artist-sec {
+    padding-top: 30px;
+  }
+  .work-examples-imgs {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .artist-details-sec img {
+    width: 140px;
+    height: 140px;
+  }
+  .artist-para {
+    text-align: justify;
+    -moz-text-align-last: center;
+         text-align-last: center;
+    width: 100%;
+    font-size: 14px;
+    line-height: 29px;
+  }
+  .border-line {
+    margin: 35px auto;
+  }
+  .work-examples {
+    padding-bottom: 60px;
+  }
+  .border-line {
+    width: 60%;
+  }
+  .artist-name {
+    font-size: 16px;
+  }
+  .work-img-holder .search-icon {
+    font-size: 25px;
+  }
+}
+.review-section {
+  padding: 65px 0 120px 0;
+}
+.review-section .review-title {
+  font-size: 22px;
+  color: #471b4e;
+  font-weight: 300;
+  text-align: center;
+}
+
+.myform {
+  margin-top: 35px;
+}
+.myform .myLabel {
+  display: block;
+  font-size: 14px;
+  color: #471b4e;
+  font-weight: 500;
+  -webkit-margin-start: 20px;
+          margin-inline-start: 20px;
+}
+.myform .required .myLabel::after {
+  content: "*";
+  color: red;
+}
+.myform .myInput {
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  padding: 0 20px;
+  border: none;
+}
+.myform .myInput:focus {
+  outline: none;
+  border: 1px solid #471b4e;
+}
+.myform .mytextarea {
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  width: 100%;
+  border: none;
+  height: 100px !important;
+  resize: none;
+  padding: 10px 20px;
+}
+.myform .mytextarea:focus {
+  outline: none;
+  border: 1px solid #471b4e;
+}
+
+.general-input {
+  margin-bottom: 15px;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 2px solid #e6e6e6;
+  position: relative;
+  -webkit-margin-end: 8px;
+          margin-inline-end: 8px;
+  display: inline-block;
+}
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-width: 0 3px 3px 0;
+}
+
+.check-div input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.submitBtn {
+  height: 50px;
+  border-radius: 25px;
+  background-color: #471b4e;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  width: 180px;
+  text-align: center;
+  transition: all linear 0.2s;
+  border: none;
+}
+
+.submit-general-input {
+  text-align: center;
+}
+
+.mycheckbox {
+  display: flex;
+  -webkit-margin-start: 20px;
+          margin-inline-start: 20px;
+}
+
+.checkbox-general-input {
+  margin-top: 22px;
+}
+.checkbox-general-input .myLabel {
+  margin-bottom: 22px;
+}
+
+.check-div {
+  width: 213px;
+}
+.check-div label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #471b4e;
+  font-weight: 300;
+  cursor: pointer;
+}
+.check-div input {
+  opacity: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.check-div input:checked + .checkmark {
+  background-color: #471b4e;
+  border: 2px solid #471b4e;
+}
+
+.mycheckbox-service-quality {
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .submitBtn:hover {
+    background-color: #aa78bd;
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .myform .mycontainer {
+    max-width: 456px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .checkbox-general-input .myLabel {
+    margin-bottom: 15px;
+  }
+  .review-section .review-title {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  .review-section {
+    padding: 40px 0 80px 0;
+  }
+  .general-input {
+    margin: 20px 0;
+  }
+  .mycheckbox {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .check-div {
+    width: 142px;
+    max-width: 100%;
+  }
+}
 /**********************************************************************************************/
 html[dir=ltr] .lang span {
   font-size: 13px;
@@ -1082,7 +1364,7 @@ nav {
   transition: 0.5s;
   box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.11);
   background-color: #fff;
-  padding: 10px 0;
+  padding: 10px 0 !important;
 }
 
 .fixsedt {
@@ -1834,6 +2116,14 @@ body {
   font-family: "Montserrat-Arabic";
 }
 
+::-moz-selection {
+  background-color: #aa78bd;
+}
+
+::selection {
+  background-color: #aa78bd;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2035,12 +2325,23 @@ img {
   visibility: visible;
 }
 
+.pages-title {
+  font-size: 18px;
+  color: #471b4e;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 @media only screen and (max-width: 767px) {
   .breadcrumb-sec {
     padding: 20px 0;
   }
   .page-head, .request-title {
-    font-size: 18px;
+    font-size: 17px;
+  }
+  .bread-link, .breadcrumb .active {
+    font-size: 13px;
   }
   .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     padding-right: 20px;
@@ -2095,6 +2396,9 @@ img {
   }
   html[dir=ltr] .message input {
     padding: 0 50px 0 25px;
+  }
+  .pages-title {
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {

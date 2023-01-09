@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="keywords" content="" >
+  <meta name="description" content="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="icon" href="images/colored-logo.png" type="image/webp" />
+  <link rel="stylesheet" href="style/animate.css">
+  <link rel="stylesheet" href="style/bootstrap4-rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/main.css" />
+  <title> تقييم الخدمة  </title>
+</head>
+
+<body>
+
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+  <!-- preloader -->
+
+  
+ <button class="toTop">
+  <i class="las toTop-icon la-angle-up"></i>
+</button>
+
+
+
+
+<!-- header -->
+      <header class="pages-header">
+        <div class="container">
+          <div class="header-content">
+            <div class="logo">
+              <a href="index.html"> <img src="images/colored-logo.png" alt="image"></a>
+            </div>
+            <nav class="open-nav">
+              <div class="close-lang-holder">
+                <div class="lang">
+                  <a  href="en.html"  class="text-capitalize">
+                    <span>English</span> 
+                    <img src="images/english.png" alt="image">
+                  </a>
+                </div>
+                <button class=" btn_es closeNav-btn">
+                  <i class="las la-times"></i>
+                </button>
+              </div>
+              
+              <ul class="ul-es nav-ul">
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li class="li-drop">
+                  <a href="#">خدماتنا</a>
+                  <ul class="ul-drop ul-es">
+                    <li><a href="service.html">تنظيف بشرة</a></li>
+                    <li><a href="#">خدمة 2</a></li>
+                    <li><a href="#"> خدمة 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="employees.html">الموظفين </a></li>
+              
+                <li><a href="#"> المتجر</a></li>
+                <li><a href="#"> تواصل معنا</a></li>
+              </ul>
+            </nav>
+            <div class="openNav-section">
+                <button class=" btn_es  openNav-btn">
+                  <i class="las la-bars"></i>
+                </button>
+            </div>
+            <div class="lang">
+              <a  href="en.html"  class="text-capitalize">
+                <span>English</span> 
+                <img src="images/english.png" alt="image">
+              </a>
+            </div>
+          
+          </div>
+        </div>
+      </header>
+<!-- end of header -->
+
+      
+<!-- breadcrump  -->
+<section class="breadcrumb-sec breadcrumb-container">
+    <div class="container">
+      <h2 class="page-head ">تقييم الخدمة </h2>
+      <ol class="breadcrumb">
+        <li class="item-home">
+          <a class="bread-link bread-home aFixx" href="index.html">الرئيسية</a>
+        </li>
+        <li class="item-home">
+          <a class="bread-link bread-home aFixx" href="employees.html">خدماتنا</a>
+        </li>
+        <li class="item-home">
+          <a class="bread-link bread-home aFixx" href="employees.html">تنظيف البشرة</a>
+        </li>
+        <li class="active  item-23">
+          <span class="bread-current">   تقيمم الخدمة  </span>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <!-- end of breadcrump  -->
+
+  <!-- request form  -->
+<div class="review-section">
+    <div class="container">
+        <div class="review-title-sec">
+            <h2 class="review-title">تقييمك يساعدنا دائمًا على تحسين مستوى الخدمة</h2>
+        </div>
+        <form class="myform"> 
+            <div class="mycontainer">
+                <div class="general-input required">
+                    <label class="myLabel "  for="">الاسم عزيزتي</label>
+                    <input class="myInput" required type="text">
+                </div>
+                <div class="general-input ">
+                    <label class="myLabel "  for="">البريد الالكتروني </label>
+                    <input class="myInput" required type="text">
+                </div>
+                <div class="general-input required">
+                    <label class="myLabel "  for="">رقم الجوال</label>
+                    <input class="myInput" required type="tel">
+                </div>
+                <div class="general-input checkbox-general-input required ">
+                    <label class="myLabel"  for="">    سرعة الحصول على الخدمة (سير العمل) </label>
+                    <div class="mycheckbox">
+                        <div class="fast-sec check-div">
+                            <label for="fast" class="fast-label"> 
+                                <input type="checkbox" class="fast-input" name="fast" id="fast">
+                                <span class="checkmark"></span>
+                                 سريعة 
+                                </label> 
+                        </div>
+                        <div class="slow-sec check-div">
+                               <label for="slow" class="slow-label"> 
+                                <input class="slow-input" type="checkbox" name="slow" id="slow">
+                                <span class="checkmark"></span>
+                                 بطيئة 
+                                </label> 
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="general-input checkbox-general-input required ">
+                    <label class="myLabel"  for="">تجاوب الادارية </label>
+                    <div class="mycheckbox">
+                        <div class="responsive-sec check-div">
+                            <label for="responsive" class="responsive-label"> 
+                                <input type="checkbox" class="responsive-input" name="responsive" id="responsive">
+                                <span class="checkmark"></span>
+                                 متجاوبة  
+                                </label> 
+                        </div>
+                        <div class="notResponsive-sec check-div">
+                               <label for="notResponsive" class="notResponsive-label"> 
+                                <input class="notResponsive-input" type="checkbox" name="notResponsive" id="notResponsive">
+                                <span class="checkmark"></span>
+                                 غير متجاوبة 
+                                </label> 
+                        </div>
+                    </div>
+                </div>
+                <div class="general-input checkbox-general-input required ">
+                    <label class="myLabel"  for="">جودة الخدمة ومقياس اداء العاملة </label>
+                    <div class="mycheckbox mycheckbox-service-quality">
+                        <div class="excellent-sec check-div">
+                            <label for="excellent" class="excellent-label"> 
+                                <input type="checkbox" class="excellent-input" name="excellent" id="excellent">
+                                <span class="checkmark"></span>
+                                 ممتازة  
+                                </label> 
+                        </div>
+                        <div class="good-sec check-div mycheck-div">
+                               <label for="good" class="good-label"> 
+                                <input class="good-input" type="checkbox" name="good" id="good">
+                                <span class="checkmark"></span>
+                                 جيدة  
+                                </label> 
+                        </div>
+                        <div class="medium-sec check-div ">
+                               <label for="medium" class="medium-label"> 
+                                <input class="medium-input" type="checkbox" name="medium" id="medium">
+                                <span class="checkmark"></span>
+                                متوسطة
+                                </label> 
+                        </div>
+                        <div class="bad-sec check-div mycheck-div">
+                               <label for="bad" class="bad-label"> 
+                                <input class="bad-input" type="checkbox" name="bad" id="bad">
+                                <span class="checkmark"></span>
+                                 سيئة
+                                </label> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="general-input checkbox-general-input required ">
+                    <label class="myLabel"  for="">نظافة الادوات و المكان     </label>
+                    <div class="mycheckbox mycheckbox-service-quality">
+                        <div class="clean-sec check-div">
+                            <label for="clean" class="clean-label"> 
+                                <input type="checkbox" class="clean-input" name="clean" id="clean">
+                                <span class="checkmark"></span>
+                                 نظيفة  
+                                </label> 
+                        </div>
+                        <div class="notClean-sec check-div ">
+                               <label for="notClean" class="notClean-label"> 
+                                <input class="notClean-input" type="checkbox" name="notClean" id="notClean">
+                                <span class="checkmark"></span>
+                                 غير نظيفة  
+                                </label> 
+                        </div>
+                    </div>
+                </div>
+                <div class="general-input checkbox-general-input required ">
+                    <label class="myLabel"  for="">  اختيار العاملة </label>
+                    <div class="mycheckbox mycheckbox-service-quality">
+                        <div class="gamila-sec check-div">
+                            <label for="gamila" class="gamila-label"> 
+                                <input type="checkbox" class="gamila-input" name="gamila" id="gamila">
+                                <span class="checkmark"></span>
+                                 جميلة  
+                                </label> 
+                        </div>
+                        <div class="am-sec check-div ">
+                               <label for="am" class="am-label"> 
+                                <input class="am-input" type="checkbox" name="am" id="am">
+                                <span class="checkmark"></span>
+                                  اى ام  
+                                </label> 
+                        </div>
+                        <div class="hanan-sec check-div ">
+                               <label for="hanan" class="hanan-label"> 
+                                <input class="hanan-input" type="checkbox" name="hanan" id="hanan">
+                                <span class="checkmark"></span>
+                                  حنان
+                                </label> 
+                        </div>
+                        <div class="shadya-sec check-div ">
+                               <label for="shadya" class="shadya-label"> 
+                                <input class="shadya-input" type="checkbox" name="shadya" id="shadya">
+                                <span class="checkmark"></span>
+                                  شادية
+                                </label> 
+                        </div>
+                        <div class="rana-sec check-div ">
+                               <label for="rana" class="rana-label"> 
+                                <input class="rana-input" type="checkbox" name="rana" id="rana">
+                                <span class="checkmark"></span>
+                                  رنا
+                                </label> 
+                        </div>
+                        <div class="elham-sec check-div ">
+                               <label for="elham" class="elham-label"> 
+                                <input class="elham-input" type="checkbox" name="elham" id="elham">
+                                <span class="checkmark"></span>
+                                  الهام
+                                </label> 
+                        </div>
+                    </div>
+                </div>
+                <div class="general-input checkbox-general-input required ">
+                    <label class="myLabel"  for="">  الخدمة المقدمة  </label>
+                    <div class="mycheckbox mycheckbox-service-quality">
+                        <div class="medical-sec check-div">
+                            <label for="medical" class="medical-label"> 
+                                <input type="checkbox" class="medical-input" name="medical" id="medical">
+                                <span class="checkmark"></span>
+                                 طبى  
+                                </label> 
+                        </div>
+                        <div class="laser-sec check-div ">
+                               <label for="laser" class="laser-label"> 
+                                <input class="laser-input" type="checkbox" name="laser" id="laser">
+                                <span class="checkmark"></span>
+                                   ليزر  
+                                </label> 
+                        </div>
+                        <div class="coal-sec check-div ">
+                               <label for="coal" class="coal-label"> 
+                                <input class="coal-input" type="checkbox" name="coal" id="coal">
+                                <span class="checkmark"></span>
+                                  فحم
+                                </label> 
+                        </div>
+                        <div class="collagen-sec check-div ">
+                               <label for="collagen" class="collagen-label"> 
+                                <input class="collagen-input" type="checkbox" name="collagen" id="collagen">
+                                <span class="checkmark"></span>
+                                  كولاجين
+                                </label> 
+                        </div>
+                        <div class="vitaminC-sec check-div ">
+                               <label for="vitaminC" class="vitaminC-label"> 
+                                <input class="vitaminC-input" type="checkbox" name="vitaminC" id="vitaminC">
+                                <span class="checkmark"></span>
+                                  فيتامين سى
+                                </label> 
+                        </div>
+                     
+                    </div>
+                </div>
+
+               
+
+                <div class="general-input required">
+                    <label class="myLabel"  for="">  ملاحظاتك عن ذوقيات وسلوك العاملة   </label>
+                    <textarea class="mytextarea" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="general-input required">
+                    <label class="myLabel"  for=""> ملاحظاتك عن جودة الخدمة  </label>
+                    <textarea class="mytextarea" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="general-input submit-general-input ">
+                    <button class="submitBtn"  type="submit" >ارسال</button>
+                </div>
+
+            </div>
+          
+        </form>
+    </div>
+</div>
+<!-- end of request form  -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+<footer class="wow  fadeInDown">
+  <div class="container">
+    <div class="contact-sec">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="contact-item contact-item-first">
+            <a href="tel:+966 540000000" class="icon">
+              <i class="las phone-icon la-phone"></i>
+            </a>
+            <div class="number-sec">
+              <p class="contact-word">اتصل بنا الآن</p>
+              <a href="tel:+966 540000000" class="contact-num">+966 540000000</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 offset-lg-2">
+          <div class="contact-item">
+            <a href="mailto:info@sald.com.sa" class="icon">
+              <i class="las message-icon la-envelope"></i>
+            </a>
+            <div class="number-sec">
+              <p class="contact-word">  او راسلنا علي</p>
+              <a href="mailto:info@sald.com.sa" class="contact-num">info@sald.com.sa</a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+   
+    <div class="row footer-row justify-content-between">
+      <div class="col-lg-3 col-md-6 ">
+        <div class="quick-links">
+          <h4>روابط سريعة</h4>
+          <ul class="ul-es quick-drop">
+            <li>
+              <a href="#">من نحن</a>
+            </li>
+            <li>
+              <a href="service.html">خدماتنا</a>
+            </li>
+            <li>
+              <a href="employees.html">الموظفين  </a>
+            </li>
+            <li>
+              <a href="#">المتجر </a>
+            </li>
+            <li>
+              <a href="#"> الأسئلة الشائعة</a>
+            </li>
+            <li>
+              <a href="#"> اتصل بنا</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="contact">
+         <h4>تابعنا على مواقع التواصل</h4>
+         <div class="socialList-holder">
+          <ul class="ul-es">
+            <li>
+              <a href="#"> <i class="lab la-telegram"></i> </a>
+            </li>
+            <li>
+              <a href="#">  <i class="lab la-instagram"></i> </a>
+            </li>
+            <li>
+              <a href="#">  <i class="lab la-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"> <i class="lab la-twitter"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="lab la-facebook-f"></i> </a>
+            </li>
+          </ul>
+         </div>
+         
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 ">
+        <div class="newsletter">
+          <h4>النشرة البريدية </h4>
+          <div class="nested">
+            <p>اشترك الآن ليصلك جديد المنتجات وأفضل العروض </p>
+            <div class="message">
+              <input type="text" placeholder="ادخل بريدك الالكترونى">
+              <button class="btn_es">
+                <i class="las mail-icon la-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+    <p>© متجر لوزا 2022</p>
+    <span>صنع فى  <a class="tasawk" href="#"><img src="images/تسوق light.png" alt=""></a>  </span>
+    </div>
+  </div>
+</footer>
+<!-- end of footer -->
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+
+</html>

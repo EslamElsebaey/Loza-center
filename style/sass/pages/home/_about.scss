@@ -15,20 +15,19 @@
             color: #471b4e;
             font-weight: 300;
         }
-        button{
-            width: 199px;
-            position: relative;
-            height: 55px;
+        a{
+            display: inline-block;
+            padding: 12px 36px;
             text-transform: capitalize;
-            border-radius: 27px;
+            border-radius: 25px;
             background-color: $second-color;
             color: #fff;
             font-size: 17px;
             font-weight: 500;
-            text-align: center;
             transition: all linear .2s;
             &:hover{
                 background-color: $main-color;
+                text-decoration: none;
             }
         }
      
@@ -61,7 +60,7 @@
 
 
 @include max-768 {
-    .about .about-desc button:hover{
+    .about .about-desc a:hover{
         background-color: $second-color;
     }
     html[dir="ltr"] {
@@ -82,12 +81,10 @@
         font-size: 20px;
         margin-bottom: 10px;
     }
-    .about .about-desc button {
-       
-        height: 40px;
-        padding: 0 23px;
+    .about .about-desc a {
+       padding: 9px 23px;
         font-size: 15px;
-        width: auto;
+        
     }
     .exp-col , .client-col{
         margin-inline-start: 0;

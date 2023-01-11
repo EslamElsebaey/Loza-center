@@ -196,7 +196,8 @@ $(".closeNav-btn").click(function(){
 // nested menus
 
 if($(window).width() <= 768) {
-  $("footer h4").click(function(){
+  $("footer h4").click(function(e){
+    e.preventDefault() ;
     $(this).next().slideToggle(300);
     $(this).toggleClass("arrow-rotate");
   })

@@ -59,7 +59,7 @@
               </div>
               
               <ul class="ul-es nav-ul">
-                <li><a href="#">الرئيسية</a></li>
+                <li><a href="index.html">الرئيسية</a></li>
                 <li><a href="#">من نحن</a></li>
                 <li class="li-drop">
                   <a href="#">خدماتنا</a>
@@ -72,7 +72,8 @@
                 <li><a href="employees.html">الموظفين </a></li>
               
                 <li><a href="#"> المتجر</a></li>
-                <li><a href="#"> تواصل معنا</a></li>
+                <li><a href="gifting.html"> الاهداء</a></li>
+                <li><a href="contact.html"> تواصل معنا</a></li>
               </ul>
             </nav>
             <div class="openNav-section">
@@ -115,7 +116,7 @@
   </section>
   <!-- end of breadcrump  -->
 
-  <!-- request form  -->
+  <!-- review form  -->
 <div class="review-section">
     <div class="container">
         <div class="review-title-sec">
@@ -135,19 +136,19 @@
                     <label class="myLabel "  for="">رقم الجوال</label>
                     <input class="myInput" required type="tel">
                 </div>
-                <div class="general-input checkbox-general-input required ">
+                <div class="general-input radio-general-input required ">
                     <label class="myLabel"  for="">    سرعة الحصول على الخدمة (سير العمل) </label>
-                    <div class="mycheckbox">
-                        <div class="fast-sec check-div">
+                    <div class="myradio">
+                        <div class="fast-sec radio-div">
                             <label for="fast" class="fast-label"> 
-                                <input type="checkbox" class="fast-input" name="fast" id="fast">
+                                <input type="radio" value="fast" class="fast-input" name="service-speed" id="fast">
                                 <span class="checkmark"></span>
                                  سريعة 
                                 </label> 
                         </div>
-                        <div class="slow-sec check-div">
+                        <div class="slow-sec radio-div">
                                <label for="slow" class="slow-label"> 
-                                <input class="slow-input" type="checkbox" name="slow" id="slow">
+                                <input class="slow-input" value="slow" type="radio" name="service-speed" id="slow">
                                 <span class="checkmark"></span>
                                  بطيئة 
                                 </label> 
@@ -155,52 +156,52 @@
                     </div>
                 </div>
                
-                <div class="general-input checkbox-general-input required ">
+                <div class="general-input radio-general-input required ">
                     <label class="myLabel"  for="">تجاوب الادارية </label>
-                    <div class="mycheckbox">
-                        <div class="responsive-sec check-div">
+                    <div class="myradio">
+                        <div class="responsive-sec radio-div">
                             <label for="responsive" class="responsive-label"> 
-                                <input type="checkbox" class="responsive-input" name="responsive" id="responsive">
+                                <input type="radio" value="responsive" class="responsive-input" name="worker-responsive" id="responsive">
                                 <span class="checkmark"></span>
                                  متجاوبة  
                                 </label> 
                         </div>
-                        <div class="notResponsive-sec check-div">
+                        <div class="notResponsive-sec radio-div">
                                <label for="notResponsive" class="notResponsive-label"> 
-                                <input class="notResponsive-input" type="checkbox" name="notResponsive" id="notResponsive">
+                                <input class="notResponsive-input" value="notResponsive" type="radio" name="worker-responsive" id="notResponsive">
                                 <span class="checkmark"></span>
                                  غير متجاوبة 
                                 </label> 
                         </div>
                     </div>
                 </div>
-                <div class="general-input checkbox-general-input required ">
+                <div class="general-input radio-general-input required ">
                     <label class="myLabel"  for="">جودة الخدمة ومقياس اداء العاملة </label>
-                    <div class="mycheckbox mycheckbox-service-quality">
-                        <div class="excellent-sec check-div">
+                    <div class="myradio myradio-service-quality">
+                        <div class="excellent-sec radio-div">
                             <label for="excellent" class="excellent-label"> 
-                                <input type="checkbox" class="excellent-input" name="excellent" id="excellent">
+                                <input type="radio" value="excellent" class="excellent-input" name="service-quality" id="excellent">
                                 <span class="checkmark"></span>
                                  ممتازة  
                                 </label> 
                         </div>
-                        <div class="good-sec check-div mycheck-div">
+                        <div class="good-sec radio-div">
                                <label for="good" class="good-label"> 
-                                <input class="good-input" type="checkbox" name="good" id="good">
+                                <input class="good-input" value="good" type="radio" name="service-quality" id="good">
                                 <span class="checkmark"></span>
                                  جيدة  
                                 </label> 
                         </div>
-                        <div class="medium-sec check-div ">
+                        <div class="medium-sec radio-div ">
                                <label for="medium" class="medium-label"> 
-                                <input class="medium-input" type="checkbox" name="medium" id="medium">
+                                <input class="medium-input" value="medium" type="radio" name="service-quality" id="medium">
                                 <span class="checkmark"></span>
                                 متوسطة
                                 </label> 
                         </div>
-                        <div class="bad-sec check-div mycheck-div">
+                        <div class="bad-sec radio-div">
                                <label for="bad" class="bad-label"> 
-                                <input class="bad-input" type="checkbox" name="bad" id="bad">
+                                <input class="bad-input" value="bad"  type="radio" name="service-quality" id="bad">
                                 <span class="checkmark"></span>
                                  سيئة
                                 </label> 
@@ -208,106 +209,106 @@
                     </div>
                 </div>
                 
-                <div class="general-input checkbox-general-input required ">
+                <div class="general-input radio-general-input required ">
                     <label class="myLabel"  for="">نظافة الادوات و المكان     </label>
-                    <div class="mycheckbox mycheckbox-service-quality">
-                        <div class="clean-sec check-div">
+                    <div class="myradio myradio-service-quality">
+                        <div class="clean-sec radio-div">
                             <label for="clean" class="clean-label"> 
-                                <input type="checkbox" class="clean-input" name="clean" id="clean">
+                                <input type="radio" value="clean" class="clean-input" name="tools-clean" id="clean">
                                 <span class="checkmark"></span>
                                  نظيفة  
                                 </label> 
                         </div>
-                        <div class="notClean-sec check-div ">
+                        <div class="notClean-sec radio-div ">
                                <label for="notClean" class="notClean-label"> 
-                                <input class="notClean-input" type="checkbox" name="notClean" id="notClean">
+                                <input class="notClean-input" value="notClean" type="radio" name="tools-clean" id="notClean">
                                 <span class="checkmark"></span>
                                  غير نظيفة  
                                 </label> 
                         </div>
                     </div>
                 </div>
-                <div class="general-input checkbox-general-input required ">
+                <div class="general-input radio-general-input required ">
                     <label class="myLabel"  for="">  اختيار العاملة </label>
-                    <div class="mycheckbox mycheckbox-service-quality">
-                        <div class="gamila-sec check-div">
+                    <div class="myradio myradio-service-quality">
+                        <div class="gamila-sec radio-div">
                             <label for="gamila" class="gamila-label"> 
-                                <input type="checkbox" class="gamila-input" name="gamila" id="gamila">
+                                <input type="radio" value="gamila" class="gamila-input" name="worker-choice" id="gamila">
                                 <span class="checkmark"></span>
                                  جميلة  
                                 </label> 
                         </div>
-                        <div class="am-sec check-div ">
+                        <div class="am-sec radio-div ">
                                <label for="am" class="am-label"> 
-                                <input class="am-input" type="checkbox" name="am" id="am">
+                                <input class="am-input" value="am" type="radio" name="worker-choice" id="am">
                                 <span class="checkmark"></span>
                                   اى ام  
                                 </label> 
                         </div>
-                        <div class="hanan-sec check-div ">
+                        <div class="hanan-sec radio-div ">
                                <label for="hanan" class="hanan-label"> 
-                                <input class="hanan-input" type="checkbox" name="hanan" id="hanan">
+                                <input class="hanan-input" value="hanan" type="radio" name="worker-choice" id="hanan">
                                 <span class="checkmark"></span>
                                   حنان
                                 </label> 
                         </div>
-                        <div class="shadya-sec check-div ">
+                        <div class="shadya-sec radio-div ">
                                <label for="shadya" class="shadya-label"> 
-                                <input class="shadya-input" type="checkbox" name="shadya" id="shadya">
+                                <input class="shadya-input"  value="shadya" type="radio" name="worker-choice" id="shadya">
                                 <span class="checkmark"></span>
                                   شادية
                                 </label> 
                         </div>
-                        <div class="rana-sec check-div ">
+                        <div class="rana-sec radio-div ">
                                <label for="rana" class="rana-label"> 
-                                <input class="rana-input" type="checkbox" name="rana" id="rana">
+                                <input class="rana-input" value="rana" type="radio" name="worker-choice" id="rana">
                                 <span class="checkmark"></span>
                                   رنا
                                 </label> 
                         </div>
-                        <div class="elham-sec check-div ">
+                        <div class="elham-sec radio-div ">
                                <label for="elham" class="elham-label"> 
-                                <input class="elham-input" type="checkbox" name="elham" id="elham">
+                                <input class="elham-input" value="elham" type="radio" name="worker-choice" id="elham">
                                 <span class="checkmark"></span>
                                   الهام
                                 </label> 
                         </div>
                     </div>
                 </div>
-                <div class="general-input checkbox-general-input required ">
+                <div class="general-input radio-general-input required ">
                     <label class="myLabel"  for="">  الخدمة المقدمة  </label>
-                    <div class="mycheckbox mycheckbox-service-quality">
-                        <div class="medical-sec check-div">
+                    <div class="myradio myradio-service-quality">
+                        <div class="medical-sec radio-div">
                             <label for="medical" class="medical-label"> 
-                                <input type="checkbox" class="medical-input" name="medical" id="medical">
+                                <input type="radio" value="medical" class="medical-input" name="offered-service" id="medical">
                                 <span class="checkmark"></span>
                                  طبى  
                                 </label> 
                         </div>
-                        <div class="laser-sec check-div ">
+                        <div class="laser-sec radio-div ">
                                <label for="laser" class="laser-label"> 
-                                <input class="laser-input" type="checkbox" name="laser" id="laser">
+                                <input class="laser-input" value="laser" type="radio" name="offered-service" id="laser">
                                 <span class="checkmark"></span>
                                    ليزر  
                                 </label> 
                         </div>
-                        <div class="coal-sec check-div ">
+                        <div class="coal-sec radio-div ">
                                <label for="coal" class="coal-label"> 
-                                <input class="coal-input" type="checkbox" name="coal" id="coal">
+                                <input class="coal-input" value="coal" type="radio" name="offered-service" id="coal">
                                 <span class="checkmark"></span>
                                   فحم
                                 </label> 
                         </div>
-                        <div class="collagen-sec check-div ">
+                        <div class="collagen-sec radio-div ">
                                <label for="collagen" class="collagen-label"> 
-                                <input class="collagen-input" type="checkbox" name="collagen" id="collagen">
+                                <input class="collagen-input" value="collagen" type="radio" name="offered-service" id="collagen">
                                 <span class="checkmark"></span>
                                   كولاجين
                                 </label> 
                         </div>
-                        <div class="vitaminC-sec check-div ">
+                        <div class="vitaminC-sec radio-div ">
                                <label for="vitaminC" class="vitaminC-label"> 
-                                <input class="vitaminC-input" type="checkbox" name="vitaminC" id="vitaminC">
+                                <input class="vitaminC-input" value="vitaminC" type="radio" name="offered-service" id="vitaminC">
                                 <span class="checkmark"></span>
                                   فيتامين سى
                                 </label> 
@@ -315,10 +316,7 @@
                      
                     </div>
                 </div>
-
-               
-
-                <div class="general-input required">
+                <div class="general-input general-input-behavior required">
                     <label class="myLabel"  for="">  ملاحظاتك عن ذوقيات وسلوك العاملة   </label>
                     <textarea class="mytextarea" name="" id="" cols="30" rows="10"></textarea>
                 </div>
@@ -335,13 +333,7 @@
         </form>
     </div>
 </div>
-<!-- end of request form  -->
-
-
-
-
-
-
+<!-- end of review form  -->
 
 
 
@@ -396,10 +388,13 @@
               <a href="#">المتجر </a>
             </li>
             <li>
+              <a href="gifting.html">الاهداء </a>
+            </li>
+            <li>
               <a href="#"> الأسئلة الشائعة</a>
             </li>
             <li>
-              <a href="#"> اتصل بنا</a>
+              <a href="contact.html"> اتصل بنا</a>
             </li>
           </ul>
         </div>
@@ -429,7 +424,7 @@
          
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 ">
+      <div class="col-lg-4 col-md-6 newsletter-col ">
         <div class="newsletter">
           <h4>النشرة البريدية </h4>
           <div class="nested">

@@ -772,13 +772,15 @@ html[dir=ltr] .employees {
   padding: 11px 21.2px;
   font-weight: 500;
   margin-top: 30px;
+  transition: all linear 0.3s;
 }
 .review-btn:hover {
   text-decoration: none;
   color: #fff;
+  background-color: #aa78bd;
 }
 .review-btn:hover i {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 .review-btn i {
   font-size: 24px;
@@ -1089,7 +1091,7 @@ html[dir=ltr] .employees {
 }
 @media only screen and (max-width: 767px) {
   .artist-sec {
-    padding-top: 30px;
+    padding-top: 35px;
   }
   .work-examples-imgs {
     grid-template-columns: repeat(2, 1fr);
@@ -1123,14 +1125,23 @@ html[dir=ltr] .employees {
     font-size: 25px;
   }
 }
-.review-section {
-  padding: 65px 0 120px 0;
-}
-.review-section .review-title {
+.review-section .review-title, .review-section .contact-title, .review-section .dedication-title, .contact-section .review-title, .contact-section .contact-title, .contact-section .dedication-title, .dedication-section .review-title, .dedication-section .contact-title, .dedication-section .dedication-title {
   font-size: 22px;
   color: #471b4e;
   font-weight: 300;
   text-align: center;
+}
+
+.dedication-section {
+  padding: 65px 0px 145px;
+}
+
+.review-section {
+  padding: 65px 0px 125px;
+}
+
+.contact-section {
+  padding: 65px 0px 150px;
 }
 
 .myform {
@@ -1143,6 +1154,7 @@ html[dir=ltr] .employees {
   font-weight: 500;
   -webkit-margin-start: 20px;
           margin-inline-start: 20px;
+  margin-bottom: 10px;
 }
 .myform .required .myLabel::after {
   content: "*";
@@ -1202,7 +1214,7 @@ html[dir=ltr] .employees {
   border-width: 0 3px 3px 0;
 }
 
-.check-div input:checked ~ .checkmark:after {
+.radio-div input:checked ~ .checkmark:after {
   display: block;
 }
 
@@ -1223,43 +1235,216 @@ html[dir=ltr] .employees {
   text-align: center;
 }
 
-.mycheckbox {
+.myradio {
   display: flex;
   -webkit-margin-start: 20px;
           margin-inline-start: 20px;
 }
 
-.checkbox-general-input {
+.radio-general-input {
   margin-top: 22px;
 }
-.checkbox-general-input .myLabel {
-  margin-bottom: 22px;
+.radio-general-input .myLabel {
+  margin-bottom: 13px;
 }
 
-.check-div {
+.radio-div {
   width: 213px;
 }
-.check-div label {
-  display: flex;
+.radio-div label {
+  display: inline-flex;
   align-items: center;
   font-size: 14px;
   color: #471b4e;
   font-weight: 300;
   cursor: pointer;
 }
-.check-div input {
+.radio-div input {
   opacity: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
-.check-div input:checked + .checkmark {
+.radio-div input:checked + .checkmark {
   background-color: #471b4e;
   border: 2px solid #471b4e;
 }
 
-.mycheckbox-service-quality {
+.general-input-behavior {
+  margin-top: 17px;
+}
+
+.myradio-service-quality {
   flex-wrap: wrap;
+}
+
+.hair-type-section, .skinClean-type-section {
+  width: 404px;
+  max-width: 100%;
+  -webkit-margin-start: 20px;
+          margin-inline-start: 20px;
+}
+
+.hair-mainLabel {
+  height: 38px;
+  border-radius: 3px;
+  background-color: #471b4e;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+.hair-mainLabel span {
+  color: #fff;
+  font-size: 14px;
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+}
+
+.myradio {
+  flex-wrap: wrap;
+}
+
+.hair-type-section .radio-div, .skinClean-type-section .radio-div {
+  width: auto;
+}
+
+.dedication-section .service-type-radio {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  justify-content: space-between;
+}
+.dedication-section .checkmark {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.price span {
+  font-size: 14px;
+  color: #7b7a7b;
+  font-weight: 500;
+}
+
+.skinClean-type-section .hair-mainLabel {
+  margin-top: 20px;
+}
+
+.payment-sec {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.total {
+  font-size: 24px;
+  color: #471b4e;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.tax {
+  font-size: 12px;
+  color: #ff0000;
+  font-weight: 300;
+}
+
+.payment-completion {
+  display: inline-block;
+  padding: 12.3px 36px;
+  border-radius: 25px;
+  background-color: #471b4e;
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: all linear 0.2s;
+  outline: none;
+  cursor: pointer;
+}
+.payment-completion:hover {
+  text-decoration: none;
+  background-color: #aa78bd;
+  color: #fff;
+}
+
+.gifting-success {
+  padding: 75px 0 130px 0;
+}
+
+.gifting-container {
+  max-width: 555px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.gifting-success-div {
+  text-align: centere;
+}
+
+.done {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.done i {
+  font-size: 72px;
+  color: #25d366;
+}
+
+.thanks-text {
+  font-size: 18px;
+  color: #471b4e;
+  font-weight: 700;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.desc-para {
+  font-size: 16px;
+  color: #471b4e;
+  font-weight: 300;
+  text-align: center;
+}
+
+.desc-para:first-of-type {
+  margin-bottom: 10px;
+}
+
+.btns-sec {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns-sec a {
+  display: inline-block;
+  padding: 12px 32.3px;
+  border-radius: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all linear 0.2s;
+  outline: none;
+  cursor: pointer;
+}
+.btns-sec a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.btns-sec .goShop {
+  background-color: #aa78bd;
+}
+.btns-sec .goShop:hover {
+  background-color: #471b4e;
+}
+.btns-sec .goHome {
+  background-color: #471b4e;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+}
+.btns-sec .goHome:hover {
+  background-color: #aa78bd;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1275,26 +1460,85 @@ html[dir=ltr] .employees {
   }
 }
 @media only screen and (max-width: 767px) {
-  .checkbox-general-input .myLabel {
+  .gifting-success {
+    padding: 50px 0 80px 0;
+  }
+  .done i {
+    font-size: 50px;
+  }
+  .btns-sec {
+    flex-direction: column;
+  }
+  .btns-sec a {
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+  .done {
+    margin-bottom: 20px;
+  }
+  .thanks-text {
+    font-size: 16px;
+  }
+  .desc-para {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .desc-para:first-of-type {
+    margin-bottom: 5px;
+  }
+  .btns-sec .goHome {
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+  }
+  .btns-sec .goShop {
+    margin-bottom: 20px;
+  }
+  .hair-type-section, .skinClean-type-section {
+    width: auto;
+  }
+  .total {
+    font-size: 21px;
+  }
+  .checkmark {
+    flex-shrink: 0;
+  }
+  .payment-completion {
+    padding: 11px 23px;
+    font-size: 16px;
+  }
+  .payment-completion:hover {
+    background-color: #471b4e;
+  }
+  .price span {
+    font-size: 13px;
+  }
+  .dedication-section .service-type-radio {
+    max-width: 99%;
+  }
+  .radio-general-input .myLabel {
     margin-bottom: 15px;
   }
-  .review-section .review-title {
+  .review-section .review-title, .contact-section .contact-title, .dedication-section .dedication-title {
     font-size: 17px;
     line-height: 1.7;
   }
-  .review-section {
-    padding: 40px 0 80px 0;
+  .review-section, .contact-section, .dedication-section {
+    padding: 40px 0 70px 0;
   }
   .general-input {
     margin: 20px 0;
   }
-  .mycheckbox {
+  .myradio {
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 500px) {
-  .check-div {
+  .radio-div {
     width: 142px;
+    max-width: 100%;
+  }
+  .dedication-section .radio-div {
+    width: 150px;
     max-width: 100%;
   }
 }
@@ -1928,6 +2172,11 @@ footer h4 {
     font-size: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .newsletter-col {
+    margin-top: 20px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .contact-word {
     font-size: 16px;
@@ -2129,6 +2378,10 @@ body {
   padding: 0;
 }
 
+label {
+  margin-bottom: 0;
+}
+
 html[dir=rtl] body {
   text-align: right;
 }
@@ -2251,6 +2504,18 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.ancor-btn {
+  color: black;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.ancor-btn:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .ancor-es {

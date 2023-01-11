@@ -251,6 +251,12 @@ ul li {
     }
 }
 
+@media screen and (min-width : 768px) and (max-width : 992px) {
+    .newsletter-col{
+        margin-top: 20px;
+    }
+}
+
 @include max-768 {
     .contact-word{
         font-size: 16px;

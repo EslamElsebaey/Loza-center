@@ -331,6 +331,9 @@ text-align: center;
 }
 
 @include max-768 {
+    .myform .myLabel{
+        font-size: 13px;
+    }
     .submitBtn{
        padding:  11px 55px;
     }

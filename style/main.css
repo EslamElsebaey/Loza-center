@@ -1460,6 +1460,9 @@ html[dir=ltr] .employees {
   }
 }
 @media only screen and (max-width: 767px) {
+  .myform .myLabel {
+    font-size: 13px;
+  }
   .submitBtn {
     padding: 11px 55px;
   }

@@ -1463,10 +1463,6 @@ html[dir=ltr] .employees {
   .gifting-success {
     padding: 50px 0 80px 0;
   }
-  .submit-general-input {
-    margin: 0;
-    margin-top: 20px;
-  }
   .done i {
     font-size: 50px;
   }
@@ -1531,6 +1527,10 @@ html[dir=ltr] .employees {
   }
   .general-input {
     margin: 20px 0;
+  }
+  .submit-general-input {
+    margin: 0;
+    margin-top: 20px;
   }
   .myradio {
     flex-wrap: wrap;

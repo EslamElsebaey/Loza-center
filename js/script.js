@@ -39,10 +39,7 @@ $(document).ready(function(){
           $(".nav-ul > li > a").css("color" , "#fff");
           $(".lang a span").css("color" , "#fff");
             }
-         
         }
-       
-       
       }
     });
     var fixedBar = document.querySelector("header"),

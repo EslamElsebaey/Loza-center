@@ -18,3 +18,21 @@ numbers.forEach((number, index) => {
     }
   }, number.dataset.time);
 });
+
+
+// let exps = document.querySelectorAll(".num");
+// let interval = 5000 ; 
+// console.log(exps)
+
+// exps.forEach((exp , index) => {
+//   let startValue = 0 ;
+//   let endValue = exp.dataset.num ;
+//   let duration = Math.floor(interval / endValue) ;
+//  let counter =  setInterval(() => {
+//     startValue += 1 ;
+//     exp.textContent = startValue ;
+//     if(startValue == exp.dataset.num){
+//       clearInterval(counter)
+//     }
+//   }, duration);
+// })

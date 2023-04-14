@@ -1,15 +1,11 @@
 
+$(window).on("load", function () {
+  $(".preloader").fadeOut();
+})
+
 
 $(document).ready(function(){
-
-  // preloader
-  setTimeout(function () {
-    $(".preloader").css({
-      opacity : "0" , 
-      visibility : "hidden" , 
-    })
-  }, 2000);
-
+  
 /*******************************************************************************************/
 
 
@@ -143,7 +139,7 @@ const productSwiper = new Swiper('.products .mainSwiper', {
 // employees swiper
 const employees = new Swiper('.employees .mainSwiper', {
   loop: true,
-  autoplay: true,
+  // autoplay: true,
   navigation: {
     nextEl: ' .employees  .swiper-button-next ',
     prevEl: '.employees .swiper-button-prev',

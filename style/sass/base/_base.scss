@@ -115,10 +115,15 @@ font-weight: 300;
   filter: drop-shadow(0 0 10px rgba(5,6,6,0.2));
 }
 .bread-link{
+  transition: color ease-in-out .2s;
   &:hover{
       text-decoration: none;
-      color: $second-color;
+      color: #fff;
   }
+}
+
+.item-home:first-of-type{
+  text-transform: capitalize;
 }
 
 //end of  bread crump 
@@ -196,12 +201,9 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $second-color;
+  background: $main-color;
 }
 
-::-webkit-scrollbar-track{
-  background-color:  $main-color;
-}
 
 
 // back-up
@@ -228,6 +230,10 @@ img {
         color: $white-color;
       }
   }
+  cursor: pointer;
+  &:focus{
+    outline: none;
+  }
   .toTop-icon{
       font-size: 19px;
       color: #6c757d;
@@ -253,7 +259,7 @@ img {
 
 @include max-768 {
   .breadcrumb-sec{
-    padding: 20px 0;
+    padding: 30px 0;
 }
 .page-head , .request-title{
     font-size: 17px;

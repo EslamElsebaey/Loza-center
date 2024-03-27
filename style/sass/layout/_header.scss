@@ -62,21 +62,7 @@ nav{
 }
 
 
-  .fixed{
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
-    transition: 0.5s;
-    box-shadow: 0px 0px 17px 0px rgb(0 0 0 / 11%);
-    background-color: #fff;
-    padding: 10px 0 !important; 
-  }
-  
-  .fixsedt {
-    top: -130px;
-  }
+
 
 .nav-ul {
     display: flex;
@@ -221,6 +207,34 @@ html[dir="ltr"]{
 }
 
 
+.fixed{
+    position: fixed ;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    transition: 0.5s;
+    box-shadow: 0px 0px 17px 0px rgb(0 0 0 / 11%);
+    background-color: #fff;
+    padding: 10px 0 ; 
+    .openNav-btn i{
+        color: #471b4e;
+    }
+    .logo img{
+        filter : brightness(0) saturate(100%) invert(15%) sepia(50%) saturate(1132%) hue-rotate(252deg) brightness(91%) contrast(101%) ;
+    }
+    .nav-ul > li a{
+        color: #471b4e;
+    }
+    .lang a span{
+        color: #471b4e;
+    }
+  }
+  
+  .fixsedt {
+    top: -130px;
+  }
+
+
 @include max-992 {
    
     .li-drop{
@@ -299,16 +313,23 @@ html[dir="ltr"]{
         padding-top: 10px;
         box-shadow: none;
         display: none;
-            
             li a {
-                color: $black-color;
+                color: $second-color;
                 font-weight: 400;
+                font-size: 14px;
             }
         }
     }
+
+    
      .header-content{
         position: relative;
         width: 100%;
+    }
+    html[dir=ltr] .li-drop .ul-drop{
+        padding: 0;
+        padding-top: 10px;
+        min-width: unset;
     }
     .openNav-btn{
         display: flex !important;
@@ -341,6 +362,7 @@ html[dir="ltr"]{
         width: 100%;
         a{
               display: flex;
+              font-size: 16px;
             justify-content: space-between;
             align-items: center;
             font-weight: 500;

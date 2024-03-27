@@ -5,36 +5,24 @@ $(window).on("load", function () {
 
 
 $(document).ready(function(){
+
+
+  //  wow animation
+new WOW().init();
   
 /*******************************************************************************************/
 
 
 //fixed nav
 
-  //~~~~~~~~~ fixed header
-    //~~~~~~~~~ fixed header
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 150) {
         $("header").addClass("fixed");
-        $(".openNav-btn i").css("color" , "#471b4e");
-        $(".logo img").css("filter" , " brightness(0) saturate(100%) invert(15%) sepia(50%) saturate(1132%) hue-rotate(252deg) brightness(91%) contrast(101%)") ;
-        $(".nav-ul > li > a").css("color" , "#471b4e");
-        $(".lang a span").css("color" , "#471b4e");
       } else {
         $("header").removeClass("fixed");
-        $(".openNav-btn i").css("color" , "#fff");
-        $(".logo img").css("filter" , "none") ;
         if($("header").hasClass("pages-header")){
           $(".nav-ul > li > a").css("color" , "#471b4e");
           $(".lang a span").css("color" , "#471b4e");
-        }else{
-           if($(window).width() <= 768){
-            $(".nav-ul > li > a").css("color" , "#471b4e");
-            $(".lang a span").css("color" , "#471b4e");
-           }else{
-          $(".nav-ul > li > a").css("color" , "#fff");
-          $(".lang a span").css("color" , "#fff");
-            }
         }
       }
     });
@@ -74,6 +62,7 @@ $(".toTop").click(function(){
 const mainSwiper = new Swiper('.mainBanner .mainSwiper', {
   loop: true,
   draggable: true,
+  speed : 1000,
   autoplay: true,
   navigation: {
     nextEl: ' .mainBanner .swiper-button-next',
@@ -104,6 +93,7 @@ const productSwiper = new Swiper('.products .mainSwiper', {
   loop: true,
   draggable: true,
   autoplay: true,
+  speed : 1000,
   navigation: {
     nextEl: ' .products .swiper-button-next',
     prevEl: '.products .swiper-button-prev',
@@ -139,7 +129,8 @@ const productSwiper = new Swiper('.products .mainSwiper', {
 // employees swiper
 const employees = new Swiper('.employees .mainSwiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
+  speed : 1000,
   navigation: {
     nextEl: ' .employees  .swiper-button-next ',
     prevEl: '.employees .swiper-button-prev',
@@ -234,14 +225,12 @@ if($(".clients-exp h4").length > 0) {
 
 })
 
-/*******************************************************************************************/
 
 
 
 
 
-//  wow animation
-new WOW().init();
+
 
 
 
